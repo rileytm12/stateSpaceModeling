@@ -1,0 +1,18 @@
+function [value, isterminal, direction] = myevents(t,X)
+
+    distance_msc = sqrt((X(3)-X(5))^2 + (X(4)-X(6))^2);
+    r_moon = 1737100;
+
+    distance_esc = sqrt((X(1)-X(5))^2 + (X(2)-X(6))^2);
+    r_earth = 6371000;
+
+    % ALWAYS define as column vectors with same size
+    value = [distance_msc - r_moon, distance_esc - r_earth];
+
+    isterminal = [1, 1];
+
+    direction = [
+        0,
+        0
+    ];
+end
