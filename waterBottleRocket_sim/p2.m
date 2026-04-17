@@ -1,9 +1,7 @@
-%% Riley Martin and Gavin Zoota
+%% Riley Martin 
 % Project 2
 % Predict the flight path of a bottle rocket using ODE45 and graph the
 % conditions
-% 11/28/2023
-% 12/14/2023
 
 clear;
 clc;
